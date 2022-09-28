@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".success">
+
+    <ImageView
+        android:id="@+id/successLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_succesfull_logo"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Succsesful!"
+        android:textSize="12pt"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/successLogo"
+        app:layout_constraintStart_toStartOf="@+id/successLogo"
+        app:layout_constraintTop_toBottomOf="@+id/successLogo"/>
+
+    <TextView
+        android:id="@+id/subSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have successfully change password. Please use your new password when logging in."
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/successLogo"
+        app:layout_constraintStart_toStartOf="@+id/successLogo"
+        app:layout_constraintTop_toBottomOf="@+id/success"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
